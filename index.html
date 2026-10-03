@@ -76,9 +76,12 @@ h1{font-size:clamp(2.2rem,7vw,4rem);line-height:1.1;letter-spacing:-.02em;margin
 .story li{color:#cfd5e2;font-size:.95rem;margin-bottom:6px;padding-left:16px;position:relative}
 .story li::before{content:"›";position:absolute;left:0;color:var(--accent)}
 .case-foot{padding:22px 28px 28px}
-.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-bottom:22px}
-/* Чтобы заменить заглушку: положите картинку в папку img/ и вместо <div class="shot">…</div> вставьте <img class="shot" src="img/имя.png" alt="..."> */
-.shot{aspect-ratio:16/10;width:100%;object-fit:cover;border:1px dashed var(--line);border-radius:12px;background:repeating-linear-gradient(45deg,var(--bg2),var(--bg2) 12px,#141823 12px,#141823 24px);display:flex;align-items:center;justify-content:center;color:var(--muted);font:.85rem ui-monospace,Consolas,monospace;text-align:center;padding:10px}
+.shots{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:12px;margin-bottom:18px;-webkit-overflow-scrolling:touch}
+.shots::-webkit-scrollbar{height:8px}
+.shots::-webkit-scrollbar-thumb{background:var(--line);border-radius:99px}
+.shots figure{flex:0 0 auto;width:min(210px,52vw);scroll-snap-align:start}
+.shot{display:block;width:100%;aspect-ratio:9/16;object-fit:cover;border:1px solid var(--line);border-radius:16px;background:var(--bg2)}
+.shots figcaption{color:var(--muted);font-size:.82rem;margin-top:8px;text-align:center}
 
 /* method */
 .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}
@@ -187,9 +190,13 @@ footer{padding:36px 0;text-align:center;color:var(--muted);font-size:.85rem;bord
       </div>
       <div class="case-foot">
         <div class="shots">
-          <div class="shot">скриншот / демо #1</div>
-          <div class="shot">скриншот / демо #2</div>
-          <div class="shot">скриншот / демо #3</div>
+          <figure><img class="shot" loading="lazy" src="img/languages.webp" alt="ImpulSpeak: Выбор языка"><figcaption>Выбор языка</figcaption></figure>
+          <figure><img class="shot" loading="lazy" src="img/start.webp" alt="ImpulSpeak: Голосовой старт"><figcaption>Голосовой старт</figcaption></figure>
+          <figure><img class="shot" loading="lazy" src="img/supermarket.webp" alt="ImpulSpeak: Диалог: супермаркет"><figcaption>Диалог: супермаркет</figcaption></figure>
+          <figure><img class="shot" loading="lazy" src="img/doctor.webp" alt="ImpulSpeak: Диалог: у врача"><figcaption>Диалог: у врача</figcaption></figure>
+          <figure><img class="shot" loading="lazy" src="img/interview.webp" alt="ImpulSpeak: Диалог: собеседование"><figcaption>Диалог: собеседование</figcaption></figure>
+          <figure><img class="shot" loading="lazy" src="img/topics.png" alt="ImpulSpeak: Живой текст: темы"><figcaption>Живой текст: темы</figcaption></figure>
+          <figure><img class="shot" loading="lazy" src="img/quiz.webp" alt="ImpulSpeak: Мини-тест"><figcaption>Мини-тест</figcaption></figure>
         </div>
         <a class="btn btn-ghost" href="https://impulspeak.com" target="_blank" rel="noopener">Открыть impulspeak.com ↗</a>
       </div>
