@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Сергей Целинковский — Vibe Coder / AI-разработчик | Python FastAPI, Казахстан</title>
-<meta name="description" content="Сергей Целинковский — vibe coder и AI-разработчик из Караганды. Python, FastAPI, интеграции с Gemini и Whisper. Строю рабочие продукты с помощью ИИ. Удалённо по Казахстану и не только.">
+<title>Сергей Лозовой — Vibe Coder / AI-разработчик | Python FastAPI, Казахстан</title>
+<meta name="description" content="Сергей Лозовой — vibe coder и AI-разработчик из Караганды. Python, FastAPI, интеграции с Gemini и Whisper. Строю рабочие продукты с помощью ИИ. Удалённо по Казахстану и не только.">
 <meta name="keywords" content="vibe coder, AI-разработчик, Python FastAPI, Казахстан, Караганда, удалённая работа, ИИ-интеграции">
-<meta name="author" content="Сергей Целинковский">
+<meta name="author" content="Сергей Лозовой">
 <meta name="theme-color" content="#0b0d12">
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ru_RU">
-<meta property="og:title" content="Сергей Целинковский — Vibe Coder / AI-разработчик">
+<meta property="og:title" content="Сергей Лозовой — Vibe Coder / AI-разработчик">
 <meta property="og:description" content="Python · FastAPI · AI-интеграции. Довожу продукты до рабочего состояния с помощью ИИ-инструментов. Флагман: ImpulSpeak.">
 <meta property="og:url" content="https://dmitrich777-osss.github.io/portfolio/">
 <meta property="og:image" content="https://dmitrich777-osss.github.io/portfolio/og-image.png">
@@ -126,7 +126,7 @@ footer{padding:36px 0;text-align:center;color:var(--muted);font-size:.85rem;bord
 <header class="hero">
   <div class="wrap">
     <span class="tag">&gt; vibe coding · AI-assisted development</span>
-    <h1>Сергей <span class="grad">Целинковский</span></h1>
+    <h1>Сергей <span class="grad">Лозовой</span></h1>
     <p class="role">Vibe Coder / AI-разработчик</p>
     <p class="stack">Python · FastAPI · AI-интеграции</p>
     <p class="loc">Караганда, Казахстан · удалённая работа по всему Казахстану (и не только)</p>
@@ -145,7 +145,7 @@ footer{padding:36px 0;text-align:center;color:var(--muted);font-size:.85rem;bord
 <section id="about" class="about">
   <div class="wrap reveal">
     <h2>Обо мне</h2>
-    <p>Я учился программированию сам — с нуля, начав с <strong>Termux на телефоне и Replit</strong>. Без вуза и без годов в IT-компаниях: просто писал код, ломал, разбирался и снова собирал, пока не научился делать вещи, которые работают.</p>
+    <p>Я учился программированию сам — с нуля, начав с <strong>Termux на телефоне и Replit</strong>. Просто писал код, ломал, разбирался и снова собирал, пока не научился делать вещи, которые работают.</p>
     <p>Затем перешёл от учебных экспериментов к <strong>реальному продукту</strong> — платформе ImpulSpeak с ИИ-репетитором, которую спроектировал и довёл до рабочего состояния.</p>
     <p>Я работаю в подходе <strong>vibe coding</strong>: активно использую Claude, Claude Code, ChatGPT и другие ИИ-инструменты на каждом этапе разработки. Это не обход — это современный способ быстро получать результат, и именно в нём моя сильная сторона: я знаю, что просить, как проверять и как собирать из этого цельный продукт.</p>
     <div class="quote">Не теоретик — довожу продукты до рабочего состояния.</div>
@@ -161,7 +161,7 @@ footer{padding:36px 0;text-align:center;color:var(--muted);font-size:.85rem;bord
         <p>Платформа для изучения языков с ИИ-репетитором: можно говорить голосом, получать ответы и разбор от ИИ.</p>
       </div>
       <div class="chips">
-        <span class="chip">FastAPI</span><span class="chip">Gemini API</span><span class="chip">Whisper</span><span class="chip">edge-tts</span><span class="chip">SQLite</span>
+        <span class="chip">FastAPI</span><span class="chip">Gemini API</span><span class="chip">Whisper</span><span class="chip">edge-tts</span><span class="chip">SQLite</span><span class="chip">Vosk</span><span class="chip">JavaScript</span><span class="chip">Linux</span><span class="chip">Caddy</span><span class="chip">GitHub Actions</span><span class="chip">Hetzner</span>
       </div>
       <div class="story">
         <div>
@@ -183,8 +183,10 @@ footer{padding:36px 0;text-align:center;color:var(--muted);font-size:.85rem;bord
         <div>
           <h4>Результат</h4>
           <ul>
-            <li>Рабочий продукт, доведённый до запуска</li>
-            <li>Полный цикл: от голоса пользователя до голосового ответа ИИ</li>
+            <li>Работающий сервис impulspeak.com: английский и казахский курсы, голосовой репетитор</li>
+            <li>Перенос с Google Cloud на Hetzner: расходы упали примерно в 4 раза (с ~$20 до ~€4 в месяц), HTTPS, резервные копии базы каждый час, защита от перебора; закрыл найденные уязвимости</li>
+            <li>Мониторинг каждые 5 минут с автоисправлением сбоев и оповещениями в Telegram, плюс отдельная внешняя проверка на GitHub Actions</li>
+            <li>Сравнение распознавания речи на реальных голосах: на казахском Vosk распознал 9 из 9 фраз, Whisper 0 из 9</li>
           </ul>
         </div>
       </div>
@@ -213,7 +215,23 @@ footer{padding:36px 0;text-align:center;color:var(--muted);font-size:.85rem;bord
       <div class="step"><div class="n">03</div><h3>Контроль качества</h3><p>Читаю и тестирую то, что сгенерировал ИИ: код должен работать в реальных условиях.</p></div>
       <div class="step"><div class="n">04</div><h3>Рабочий результат</h3><p>Довожу до состояния «можно пользоваться»: с хранением данных, API и деплоем.</p></div>
     </div>
-    <p class="method-note">Для заказчика это значит: быстрее сроки и меньше бюджета на тот же результат. ИИ-инструменты — мой рабочий инструмент, как для других IDE или фреймворк, а небольшой формальный стаж компенсируется скоростью и готовым продуктом, который можно открыть и проверить.</p>
+    <p class="method-note">Для заказчика это значит: быстрее сроки и меньше бюджета на тот же результат. ИИ-инструменты — мой рабочий инструмент, как для других IDE или фреймворк.</p>
+  </div>
+</section>
+
+<section id="ai" class="about">
+  <div class="wrap reveal">
+    <h2>Как я работаю с ИИ-ассистентом</h2>
+    <p>Продукт, методику и каждую задачу придумываю и ставлю я. Код пишу вместе с Claude Code. Я принимаю результат на слух и на глаз, проверяю на живых устройствах, управляю серверами, расходами и безопасностью.</p>
+  </div>
+</section>
+
+<section id="video">
+  <div class="wrap reveal">
+    <h2>Видео</h2>
+    <div class="contacts">
+      <a class="contact" href="https://www.youtube.com/@ImpulSpeak" target="_blank" rel="noopener"><small>YouTube</small><span>Мои работы: канал ImpulSpeak ↗</span></a>
+    </div>
   </div>
 </section>
 
@@ -221,7 +239,7 @@ footer{padding:36px 0;text-align:center;color:var(--muted);font-size:.85rem;bord
   <div class="wrap reveal">
     <h2>Навыки</h2>
     <div class="skills">
-      <span class="skill">Python</span><span class="skill">FastAPI</span><span class="skill">REST API</span><span class="skill">SQLite</span><span class="skill">Gemini API</span><span class="skill">Whisper</span><span class="skill">Telegram Bot API</span><span class="skill">Git</span><span class="skill">Bash</span><span class="skill">Prompt Engineering</span><span class="skill">Разработка с помощью ИИ</span><span class="skill">Claude Code</span>
+      <span class="skill">Python</span><span class="skill">FastAPI</span><span class="skill">REST API</span><span class="skill">SQLite</span><span class="skill">Gemini API</span><span class="skill">Whisper</span><span class="skill">Telegram Bot API</span><span class="skill">Git</span><span class="skill">Bash</span><span class="skill">Prompt Engineering</span><span class="skill">Разработка с помощью ИИ</span><span class="skill">Claude Code</span><span class="skill">Linux</span><span class="skill">JavaScript</span><span class="skill">GitHub Actions</span><span class="skill">Vosk</span>
     </div>
   </div>
 </section>
@@ -239,7 +257,7 @@ footer{padding:36px 0;text-align:center;color:var(--muted);font-size:.85rem;bord
 </main>
 
 <footer>
-  <div class="wrap">© 2026 Сергей Целинковский · Караганда, Казахстан · Сайт сделан с помощью ИИ</div>
+  <div class="wrap">© 2026 Сергей Лозовой · Караганда, Казахстан · Сайт сделан с помощью ИИ</div>
 </footer>
 
 <script>
