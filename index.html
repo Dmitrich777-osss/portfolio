@@ -3,16 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Сергей — Python-разработчик, FastAPI и AI-интеграции</title>
-<meta name="description" content="Сергей — Python-разработчик из Караганды. FastAPI, интеграции с Gemini и Whisper. Строю рабочие продукты с помощью ИИ. Удалённо по Казахстану и не только.">
-<meta name="keywords" content="Python-разработчик, AI-интеграции, Python FastAPI, Казахстан, Караганда, удалённая работа, ИИ-интеграции">
+<title>Сергей — Python / FastAPI разработчик и AI-инженер</title>
+<meta name="description" content="Сергей — продуктовый Python-разработчик и AI-инженер из Караганды. Разработка отказоустойчивых веб-сервисов на FastAPI, голосовых AI-систем, автономных агентов и автоматизации для бизнеса. Удалённо по Казахстану и миру.">
+<meta name="keywords" content="Python-разработчик, AI-инженер, FastAPI, AI-интеграции, голосовой AI, автономные агенты, Казахстан, Караганда, удалённая работа, PWA, ImpulSpeak">
 <meta name="author" content="Сергей">
 <meta name="theme-color" content="#0b0d12">
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ru_RU">
-<meta property="og:title" content="Сергей — Python-разработчик, FastAPI и AI-интеграции">
-<meta property="og:description" content="Python · FastAPI · AI-интеграции. Довожу продукты до рабочего состояния с помощью ИИ-инструментов. Флагман: ImpulSpeak.">
+<meta property="og:title" content="Сергей — Python / FastAPI разработчик и AI-инженер">
+<meta property="og:description" content="Python · FastAPI · AI-интеграции · Автономные агенты. Довожу продукты до рабочего состояния в продакшене. Флагманы: ImpulSpeak, AI Assistant v1.0.">
 <meta property="og:url" content="https://dmitrich777-osss.github.io/portfolio/">
 <meta property="og:image" content="https://dmitrich777-osss.github.io/portfolio/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -24,7 +24,7 @@
 <style>
 :root{
   --bg:#0b0d12; --bg2:#12151d; --card:#161a24; --line:#242a38;
-  --text:#e8ebf2; --muted:#9aa3b5; --accent:#7c5cff; --accent2:#22d3ee;
+  --text:#e8ebf2; --muted:#9aa3b5; --accent:#7c5cff; --accent2:#22d3ee; --accent3:#f59e0b;
   --radius:16px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
@@ -36,6 +36,7 @@ section{padding:72px 0}
 h2{font-size:clamp(1.5rem,4vw,2rem);margin-bottom:28px;letter-spacing:-.01em}
 h2::before{content:"// ";color:var(--accent);font-family:ui-monospace,Consolas,monospace}
 .grad{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.grad-gold{background:linear-gradient(90deg,var(--accent3),#fde047);-webkit-background-clip:text;background-clip:text;color:transparent}
 
 /* hero */
 .hero{min-height:92vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:60px 0}
@@ -47,7 +48,7 @@ h1{font-size:clamp(2.2rem,7vw,4rem);line-height:1.1;letter-spacing:-.02em;margin
 .role{font-size:clamp(1.1rem,3vw,1.5rem);color:var(--muted);margin-bottom:10px}
 .stack{font:500 clamp(1rem,2.5vw,1.2rem) ui-monospace,Consolas,monospace;margin-bottom:10px}
 .loc{color:var(--muted);margin-bottom:24px}
-.slogan{max-width:600px;font-size:1.1rem;margin-bottom:34px}
+.slogan{max-width:660px;font-size:1.1rem;margin-bottom:34px;color:#cfd5e2}
 .btns{display:flex;flex-wrap:wrap;gap:12px}
 .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 24px;border-radius:12px;text-decoration:none;font-weight:600;transition:transform .2s,box-shadow .2s,background .2s;border:1px solid transparent}
 .btn:hover{transform:translateY(-2px)}
@@ -55,25 +56,29 @@ h1{font-size:clamp(2.2rem,7vw,4rem);line-height:1.1;letter-spacing:-.02em;margin
 .btn-wa:hover{box-shadow:0 12px 30px rgba(37,211,102,.38)}
 .btn-ghost{border-color:var(--line);background:var(--bg2)}
 .btn-ghost:hover{border-color:var(--accent)}
+.btn-gold{background:linear-gradient(135deg,#f59e0b,#d97706);color:#0b0f19;border-color:#fbbf24;box-shadow:0 6px 20px rgba(245,158,11,.25)}
+.btn-gold:hover{box-shadow:0 8px 26px rgba(245,158,11,.35)}
 .btn svg{width:20px;height:20px;fill:currentColor}
 
 /* about */
-.about p{color:#cfd5e2;margin-bottom:16px;max-width:760px}
+.about p{color:#cfd5e2;margin-bottom:16px;max-width:780px}
 .about strong{color:var(--text)}
-.quote{margin-top:24px;padding:18px 22px;border-left:3px solid var(--accent);background:var(--bg2);border-radius:0 12px 12px 0;font-weight:600;max-width:760px}
+.quote{margin-top:24px;padding:18px 22px;border-left:3px solid var(--accent);background:var(--bg2);border-radius:0 12px 12px 0;font-weight:600;max-width:780px}
 
 /* project */
-.case{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.case{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:36px}
 .case-head{padding:28px 28px 8px}
 .case-head h3{font-size:1.6rem;margin-bottom:6px}
 .case-head p{color:var(--muted)}
 .chips{display:flex;flex-wrap:wrap;gap:8px;padding:14px 28px 0}
 .chip{font:500 .8rem ui-monospace,Consolas,monospace;padding:5px 11px;border-radius:99px;background:rgba(124,92,255,.14);color:#c4b5ff;border:1px solid rgba(124,92,255,.3)}
+.chip-cyan{background:rgba(34,211,238,.12);color:#a5f3fc;border-color:rgba(34,211,238,.3)}
+.chip-gold{background:rgba(245,158,11,.14);color:#fde68a;border-color:rgba(245,158,11,.3)}
 .story{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);margin-top:24px;border-top:1px solid var(--line)}
 .story>div{background:var(--card);padding:22px 28px}
 .story h4{font:600 .8rem ui-monospace,Consolas,monospace;text-transform:uppercase;letter-spacing:.08em;color:var(--accent2);margin-bottom:10px}
 .story ul{list-style:none}
-.story li{color:#cfd5e2;font-size:.95rem;margin-bottom:6px;padding-left:16px;position:relative}
+.story li{color:#cfd5e2;font-size:.95rem;margin-bottom:8px;padding-left:16px;position:relative}
 .story li::before{content:"›";position:absolute;left:0;color:var(--accent)}
 .case-foot{padding:22px 28px 28px}
 .shots{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:12px;margin-bottom:18px;-webkit-overflow-scrolling:touch}
@@ -82,6 +87,17 @@ h1{font-size:clamp(2.2rem,7vw,4rem);line-height:1.1;letter-spacing:-.02em;margin
 .shots figure{flex:0 0 auto;width:min(210px,52vw);scroll-snap-align:start}
 .shot{display:block;width:100%;aspect-ratio:9/16;object-fit:cover;border:1px solid var(--line);border-radius:16px;background:var(--bg2)}
 .shots figcaption{color:var(--muted);font-size:.82rem;margin-top:8px;text-align:center}
+
+/* services */
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.service-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px 24px;transition:border-color .2s,transform .2s;position:relative;overflow:hidden}
+.service-card:hover{border-color:var(--accent2);transform:translateY(-3px)}
+.service-card::before{content:"";position:absolute;top:0;left:0;width:100%;height:3px;background:linear-gradient(90deg,var(--accent),var(--accent2))}
+.service-icon{font-size:1.8rem;margin-bottom:12px}
+.service-card h3{font-size:1.2rem;margin-bottom:10px;color:var(--text)}
+.service-card p{color:#cfd5e2;font-size:.95rem;line-height:1.6}
+.service-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.service-tag{font:500 .75rem ui-monospace,Consolas,monospace;padding:3px 8px;border-radius:6px;background:var(--bg2);color:var(--muted);border:1px solid var(--line)}
 
 /* method */
 .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}
@@ -111,7 +127,7 @@ footer{padding:36px 0;text-align:center;color:var(--muted);font-size:.85rem;bord
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   .reveal{opacity:1;transform:none;transition:none}
-  .btn,.step,.contact{transition:none}
+  .btn,.step,.contact,.service-card{transition:none}
 }
 @media (max-width:720px){
   section{padding:52px 0}
@@ -125,18 +141,19 @@ footer{padding:36px 0;text-align:center;color:var(--muted);font-size:.85rem;bord
 
 <header class="hero">
   <div class="wrap">
-    <span class="tag">&gt; python</span>
+    <span class="tag">&gt; python / ai-engineer</span>
     <h1><span class="grad">Сергей</span></h1>
-    <p class="role">Python-разработчик / AI-интеграции</p>
-    <p class="stack">Python · FastAPI · AI-интеграции</p>
-    <p class="loc">Караганда, Казахстан · удалённая работа по всему Казахстану (и не только)</p>
-    <p class="slogan">С AI-инструментами рабочий продукт собирается за дни, а не за месяцы классической разработки. Так, в одиночку, я построил двуязычную платформу — английский и казахский курсы с голосовым ИИ-репетитором.</p>
+    <p class="role">Python-разработчик / AI Backend Engineer</p>
+    <p class="stack">Python · FastAPI · AI-интеграции · PWA · Автономные агенты</p>
+    <p class="loc">Караганда, Казахстан · удалённая работа по всему Казахстану и миру</p>
+    <p class="slogan">С современным AI-стеком рабочий продукт собирается за дни, а не за месяцы. В моём портфолио — голосовой тренажёр ImpulSpeak (английский и казахский курсы), автономная система управления AI Assistant v1.0 и решения по автоматизации бизнес-аналитики под ключ.</p>
     <div class="btns">
       <a class="btn btn-wa" href="https://wa.me/77025923481" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1 0 12.04 2Zm5.8 14.2c-.25.7-1.45 1.33-2 1.4-.52.07-1.17.1-1.9-.12a17 17 0 0 1-1.72-.63c-3.02-1.3-5-4.34-5.15-4.54-.15-.2-1.23-1.64-1.23-3.13 0-1.5.77-2.22 1.05-2.52.27-.3.6-.37.8-.37h.57c.18 0 .43-.07.67.52.25.6.85 2.1.92 2.25.08.15.13.33.03.52-.1.2-.15.32-.3.5-.15.17-.32.38-.45.51-.15.15-.3.3-.13.6.17.3.77 1.27 1.65 2.05 1.13 1 2.08 1.32 2.38 1.47.3.15.47.12.65-.07.17-.2.75-.87.95-1.17.2-.3.4-.25.67-.15.28.1 1.75.83 2.05.98.3.15.5.22.57.35.08.12.08.72-.17 1.42Z"/></svg>
         Написать в WhatsApp
       </a>
-      <a class="btn btn-ghost" href="#project">Смотреть проект ↓</a>
+      <a class="btn btn-ghost" href="#projects">Смотреть проекты ↓</a>
+      <a class="btn btn-ghost" href="#services">Услуги для бизнеса</a>
     </div>
   </div>
 </header>
@@ -145,20 +162,22 @@ footer{padding:36px 0;text-align:center;color:var(--muted);font-size:.85rem;bord
 <section id="about" class="about">
   <div class="wrap reveal">
     <h2>Обо мне</h2>
-    <p>Я учился программированию сам — с нуля, начав с <strong>Termux на телефоне и Replit</strong>. Просто писал код, ломал, разбирался и снова собирал, пока не научился делать вещи, которые работают.</p>
-    <p>Затем перешёл от учебных экспериментов к <strong>реальному продукту</strong> — платформе ImpulSpeak с ИИ-репетитором, которую спроектировал и довёл до рабочего состояния.</p>
-    <p>Я активно использую Claude, Claude Code, ChatGPT и другие ИИ-инструменты на каждом этапе разработки. Это не обход — это современный способ быстро получать результат, и именно в нём моя сильная сторона: я знаю, что просить, как проверять и как собирать из этого цельный продукт.</p>
-    <div class="quote">Не теоретик — довожу продукты до рабочего состояния.</div>
+    <p>Я — продуктовый <strong>Python-разработчик и AI-инженер</strong>. Моя специализация — проектирование, разработка и вывод в продакшен отказоустойчивых веб-сервисов, голосовых и текстовых AI-систем, клиентских PWA-приложений и комплексной автоматизации бизнес-процессов на Python и FastAPI.</p>
+    <p>Вместо месяцев теоретических согласований я проектирую надёжную архитектуру, быстро собираю рабочий прототип, тестирую его на реальных пользователях и довожу до состояния стабильного продакшена с базами данных, защитой от сбоев и минимальными серверными расходами.</p>
+    <p>Я активно использую Claude Code, Cursor, ChatGPT и передовые AI-инструменты на каждом этапе разработки. Это современный инженерный мультипликатор скорости: я точно знаю, как формулировать технические требования, как верифицировать сгенерированный код и как собирать из независимых компонентов монолитные, готовые к нагрузкам продукты.</p>
+    <div class="quote">Не теоретик — создаю автономные системы, работающие в реальном бою.</div>
   </div>
 </section>
 
-<section id="project">
+<section id="projects">
   <div class="wrap reveal">
-    <h2>Флагманский проект</h2>
+    <h2>Проекты в продакшене</h2>
+
+    <!-- КЕЙС 1: IMPULSPEAK -->
     <article class="case">
       <div class="case-head">
         <h3>ImpulSpeak</h3>
-        <p>Платформа для изучения языков с ИИ-репетитором: можно говорить голосом, получать ответы и разбор от ИИ.</p>
+        <p>Голосовая образовательная платформа с AI-репетитором Светланой (английский и казахский курсы).</p>
       </div>
       <div class="chips">
         <span class="chip">FastAPI</span><span class="chip">Gemini API</span><span class="chip">Whisper</span><span class="chip">edge-tts</span><span class="chip">SQLite</span><span class="chip">Vosk</span><span class="chip">JavaScript</span><span class="chip">Linux</span><span class="chip">Caddy</span><span class="chip">GitHub Actions</span><span class="chip">Hetzner</span>
@@ -167,26 +186,27 @@ footer{padding:36px 0;text-align:center;color:var(--muted);font-size:.85rem;bord
         <div>
           <h4>Задача</h4>
           <ul>
-            <li>Дать человеку практику живого разговора на иностранном языке без репетитора</li>
-            <li>Объединить распознавание речи, ИИ-диалог и озвучку в одном сервисе</li>
+            <li>Дать человеку практику живого разговора на иностранном языке без репетитора.</li>
+            <li>Объединить распознавание речи, ИИ-диалог и естественную озвучку в едином потоковом конвейере.</li>
+            <li>Обеспечить качественное распознавание казахской речи, с которой не справляются мировые модели.</li>
           </ul>
         </div>
         <div>
           <h4>Решение</h4>
           <ul>
-            <li>Backend-архитектура с нуля на FastAPI</li>
-            <li>REST API для интеграции с AI-сервисами</li>
-            <li>Whisper — речь в текст, Gemini — диалог, edge-tts — голос</li>
-            <li>Хранение данных пользователей в SQLite</li>
+            <li>Backend-архитектура с нуля на FastAPI с REST API для голосовых сценариев.</li>
+            <li>Vosk (офлайн STT) для казахского языка, Whisper для английского, Gemini для логики диалога, edge-tts для голоса.</li>
+            <li>Хранение профилей и истории прогресса в SQLite с ежечасными бэкапами.</li>
+            <li>Клиентский PWA-интерфейс с поддержкой добавления на экран смартфонов iOS и Android.</li>
           </ul>
         </div>
         <div>
           <h4>Результат</h4>
           <ul>
-            <li>Работающий сервис impulspeak.com: английский и казахский курсы, голосовой репетитор</li>
-            <li>Перенос с Google Cloud на Hetzner: расходы упали примерно в 4 раза (с ~$20 до ~€4 в месяц), HTTPS, резервные копии базы каждый час, защита от перебора; закрыл найденные уязвимости</li>
-            <li>Мониторинг каждые 5 минут с автоисправлением сбоев и оповещениями в Telegram, плюс отдельная внешняя проверка на GitHub Actions</li>
-            <li>Сравнение распознавания речи на реальных голосах: на казахском Vosk распознал 9 из 9 фраз, Whisper 0 из 9</li>
+            <li>Работающий сервис <strong>impulspeak.com</strong>: интерактивные сценарии (аэропорт, банк, собеседование).</li>
+            <li>Перенос с Google Cloud на Hetzner: серверные расходы сокращены <strong>в 4 раза (с ~$20 до ~€4/мес)</strong> при 100% аптайме.</li>
+            <li>Сравнение моделей: казахская модель <strong>Vosk распознала 9 из 9 фраз</strong>, в то время как облачный Whisper дал 0 из 9.</li>
+            <li>Двойной мониторинг: локальный сторож раз в 5 минут с автовосстановлением и ботом в Telegram + проверка на GitHub Actions.</li>
           </ul>
         </div>
       </div>
@@ -203,6 +223,115 @@ footer{padding:36px 0;text-align:center;color:var(--muted);font-size:.85rem;bord
         <a class="btn btn-ghost" href="https://impulspeak.com" target="_blank" rel="noopener">Открыть impulspeak.com ↗</a>
       </div>
     </article>
+
+    <!-- КЕЙС 2: AI ASSISTANT V1.0 -->
+    <article class="case">
+      <div class="case-head">
+        <h3>AI Assistant v1.0 — Автономная агентная система</h3>
+        <p>Персональный центр управления проектами, веб-разведки (Deep Research) и биржевой аналитики KASE с мобильным PWA-доступом.</p>
+      </div>
+      <div class="chips">
+        <span class="chip chip-cyan">Python 3.14</span><span class="chip chip-cyan">FastAPI / HTTP Server</span><span class="chip chip-cyan">Gemini API (Multi-Model Fallback)</span><span class="chip chip-cyan">SQLite</span><span class="chip chip-cyan">PWA</span><span class="chip chip-cyan">Cloudflare Tunnel (HTTP/2)</span><span class="chip chip-cyan">OpenSSH</span><span class="chip chip-cyan">Deep Research</span>
+      </div>
+      <div class="story">
+        <div>
+          <h4>Задача</h4>
+          <ul>
+            <li>Создать автономного ИИ-ассистента с долговременной памятью и строгой изоляцией данных ($0 бюджет).</li>
+            <li>Обеспечить защищённый доступ со смартфона через мобильный интернет (4G/5G) без выделенного белого IP.</li>
+            <li>Автоматизировать ежедневный утренний аудит проектов, проверку сайта школы и мониторинг котировок акций KASE.</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Решение</h4>
+          <ul>
+            <li>3-контурная матрица безопасности (Read-Only ядро, Safe Workspace, версионирование и авто-бэкапы в SQLite).</li>
+            <li>Двухканальное облачное туннелирование: Cloudflare Quick Tunnel (HTTP/2) + OpenSSH (Localhost.run) с QR-кодом для телефона.</li>
+            <li>PWA-дашборд с защитой по сессионному ПИН-коду и автономной установкой на экран смартфона как нативное приложение.</li>
+            <li>Модуль Deep Research: бесплатный сбор веб-источников (DuckDuckGo + Wikipedia API) с двойной верификацией фактов (Double Check).</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Результат</h4>
+          <ul>
+            <li>3-уровневый интеллектуальный маршрутизатор: локальный контур Level 0 экономит до 60% квот API.</li>
+            <li>Автоматический Утренний брифинг: параллельный опрос 7 эмитентов биржи KASE (KZTO, KSPI, HSBK, KEGC, GB_ALTN, MMGZp, AIRA) за 2.5 секунды.</li>
+            <li>Полное покрытие сквозными тестами: режим самопроверки <strong>[11/11 OK]</strong> подтверждает отказоустойчивость всех узлов.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="case-foot" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;">
+        <span style="font-size:0.9rem;color:var(--muted)">⚡ Локальная архитектура · Нулевой внешний бюджет ($0) · Полная изоляция данных</span>
+        <a class="btn btn-ghost" href="#contacts">Запросить демонстрацию архитектуры →</a>
+      </div>
+    </article>
+
+    <!-- КЕЙС 3: АВТОМАТИЗАЦИЯ СВОДНЫХ ОТЧЕТОВ ПРОДАЖ -->
+    <article class="case">
+      <div class="case-head">
+        <h3>Система автоматической сводной аналитики продаж (B2B)</h3>
+        <p>Консолидация разрозненных каналов торговли (офлайн-точка, WhatsApp, Instagram, звонки) в единый управленческий дашборд.</p>
+      </div>
+      <div class="chips">
+        <span class="chip chip-gold">Python</span><span class="chip chip-gold">FastAPI</span><span class="chip chip-gold">Telegram Bot API</span><span class="chip chip-gold">WhatsApp Parser</span><span class="chip chip-gold">PostgreSQL / SQLite</span><span class="chip chip-gold">Excel / Google Sheets</span>
+      </div>
+      <div class="story">
+        <div>
+          <h4>Задача</h4>
+          <ul>
+            <li>Ручной сбор и сверка заявок из мессенджеров, социальных сетей и кассы отнимали у руководителя до 2 часов ежедневно.</li>
+            <li>Человеческий фактор приводил к потере заказов и расхождениям в кассовой отчётности.</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Решение</h4>
+          <ul>
+            <li>Разработан конвейер агрегации: боты и фоновые парсеры перехватывают входящие заявки и нормализуют позиции.</li>
+            <li>Автоматическая синхронизация с базой данных и выгрузка в наглядные сводки в Telegram и Excel.</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Результат</h4>
+          <ul>
+            <li>Время подготовки ежедневной сводки для собственника сократилось <strong>с 2 часов до 30 секунд</strong>.</li>
+            <li>Исключена потеря заказов, реализован мгновенный расчёт чистой прибыли, маржинальности и остатков.</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- УСЛУГИ ДЛЯ БИЗНЕСА -->
+<section id="services">
+  <div class="wrap reveal">
+    <h2>Чем я могу помочь вашему бизнесу</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">🤖</div>
+        <h3>AI-боты и умные ассистенты под ключ</h3>
+        <p>Разработка умных консультантов в Telegram, WhatsApp и на сайте: интеграция с базой знаний компании, каталогом товаров и CRM. Бесшовная поддержка русского и казахского языков.</p>
+        <div class="service-tags">
+          <span class="service-tag">Telegram Bot</span><span class="service-tag">WhatsApp</span><span class="service-tag">Gemini / Claude</span><span class="service-tag">Казахский + Русский</span>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🎙️</div>
+        <h3>Голосовые AI-тренажёры для персонала</h3>
+        <p>Внедрение интерактивных голосовых тренажёров для обучения отделов продаж и онлайн-школ на базе технологий ImpulSpeak: отработка скриптов, оценка речи и разбор ошибок без участия живого тренера.</p>
+        <div class="service-tags">
+          <span class="service-tag">Vosk STT</span><span class="service-tag">Whisper</span><span class="service-tag">Скрипты продаж</span><span class="service-tag">Оценка речи</span>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">⚡</div>
+        <h3>Автоматизация отчётов и веб-сервисы</h3>
+        <p>Разработка быстрых MVP и серверных решений на Python и FastAPI: сведение разрозненных отчётов в 1 клик, парсинг данных, интеграция API и аудит серверных расходов (снижение чека за хостинг в 3–5 раз).</p>
+        <div class="service-tags">
+          <span class="service-tag">FastAPI</span><span class="service-tag">Авто-отчёты</span><span class="service-tag">Парсинг</span><span class="service-tag">Экономия облака</span>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -212,8 +341,8 @@ footer{padding:36px 0;text-align:center;color:var(--muted);font-size:.85rem;bord
     <div class="steps">
       <div class="step"><div class="n">01</div><h3>Быстрый прототип</h3><p>С помощью ИИ за часы собираю первую рабочую версию, чтобы идею можно было потрогать, а не обсуждать.</p></div>
       <div class="step"><div class="n">02</div><h3>Итерации</h3><p>Короткие циклы: запустил, проверил, поправил. Каждый шаг — проверенный результат, а не гипотеза.</p></div>
-      <div class="step"><div class="n">03</div><h3>Контроль качества</h3><p>Читаю и тестирую то, что сгенерировал ИИ: код должен работать в реальных условиях.</p></div>
-      <div class="step"><div class="n">04</div><h3>Рабочий результат</h3><p>Довожу до состояния «можно пользоваться»: с хранением данных, API и деплоем.</p></div>
+      <div class="step"><div class="n">03</div><h3>Контроль качества</h3><p>Читаю и тестирую то, что сгенерировал ИИ: код должен работать в реальных условиях под нагрузкой.</p></div>
+      <div class="step"><div class="n">04</div><h3>Рабочий результат</h3><p>Довожу до состояния «можно пользоваться»: с хранением данных, API, PWA и безопасным деплоем.</p></div>
     </div>
     <p class="method-note">Для заказчика это значит: быстрее сроки и меньше бюджета на тот же результат. ИИ-инструменты — мой рабочий инструмент, как для других IDE или фреймворк.</p>
   </div>
@@ -224,9 +353,9 @@ footer{padding:36px 0;text-align:center;color:var(--muted);font-size:.85rem;bord
     <h2>Системная инженерия</h2>
     <div class="steps">
       <div class="step"><h3>Мониторинг</h3><p>Автоматическая проверка сайта каждые 5 минут с самовосстановлением при сбоях и ежедневной сводкой в Telegram. Отдельная независимая проверка на GitHub Actions.</p></div>
-      <div class="step"><h3>SEO</h3><p>10 отдельных посадочных страниц под конкретные поисковые запросы, карта сайта, подтверждение в Google Search Console.</p></div>
-      <div class="step"><h3>Расходы</h3><p>Перенос инфраструктуры с Google Cloud на Hetzner: расходы упали примерно в 4 раза (с ~$20 до ~€4 в месяц) без потери функциональности.</p></div>
-      <div class="step"><h3>Безопасность</h3><p>Закрыл найденные уязвимости, убрал утечку ключа из логов, настроил защиту от перебора запросов.</p></div>
+      <div class="step"><h3>SEO</h3><p>Посадочные страницы под конкретные поисковые запросы, sitemap, подтверждение в Google Search Console и оптимизация метаданных.</p></div>
+      <div class="step"><h3>Расходы</h3><p>Перенос инфраструктуры с Google Cloud на Hetzner: расходы упали примерно в 4 раза (с ~$20 до ~€4 в месяц) без потери производительности.</p></div>
+      <div class="step"><h3>Безопасность</h3><p>Закрыл найденные уязвимости, убрал утечку ключей из логов, настроил защиту от перебора запросов и изолированные зоны доступа.</p></div>
     </div>
   </div>
 </section>
@@ -234,7 +363,7 @@ footer{padding:36px 0;text-align:center;color:var(--muted);font-size:.85rem;bord
 <section id="ai" class="about">
   <div class="wrap reveal">
     <h2>Как я работаю с ИИ-ассистентом</h2>
-    <p>Продукт, методику и каждую задачу придумываю я. Результат принимаю на слух и на глаз, проверяю на живых устройствах, управляю серверами, расходами и безопасностью.</p>
+    <p>Продукт, методику и каждую архитектурную задачу придумываю я. Результат принимаю на слух и на глаз, проверяю на живых устройствах, управляю серверами, расходами и безопасностью данных.</p>
   </div>
 </section>
 
@@ -250,9 +379,9 @@ footer{padding:36px 0;text-align:center;color:var(--muted);font-size:.85rem;bord
 
 <section id="skills">
   <div class="wrap reveal">
-    <h2>Навыки</h2>
+    <h2>Навыки и стек</h2>
     <div class="skills">
-      <span class="skill">Python</span><span class="skill">FastAPI</span><span class="skill">REST API</span><span class="skill">SQLite</span><span class="skill">Gemini API</span><span class="skill">Whisper</span><span class="skill">Telegram Bot API</span><span class="skill">Git</span><span class="skill">Bash</span><span class="skill">Prompt Engineering</span><span class="skill">Разработка с помощью ИИ</span><span class="skill">Claude Code</span><span class="skill">Linux</span><span class="skill">JavaScript</span><span class="skill">GitHub Actions</span><span class="skill">Vosk</span>
+      <span class="skill">Python 3.14</span><span class="skill">FastAPI</span><span class="skill">REST API</span><span class="skill">SQLite</span><span class="skill">PostgreSQL</span><span class="skill">Gemini API</span><span class="skill">Whisper</span><span class="skill">Vosk (STT)</span><span class="skill">edge-tts</span><span class="skill">PWA</span><span class="skill">Telegram Bot API</span><span class="skill">Cloudflare Tunnels</span><span class="skill">Git / GitHub Actions</span><span class="skill">Bash</span><span class="skill">Prompt Engineering</span><span class="skill">Autonomous Agents</span><span class="skill">Claude Code</span><span class="skill">Linux / Hetzner</span><span class="skill">JavaScript</span><span class="skill">Caddy / SSL</span>
     </div>
   </div>
 </section>
@@ -270,7 +399,7 @@ footer{padding:36px 0;text-align:center;color:var(--muted);font-size:.85rem;bord
 </main>
 
 <footer>
-  <div class="wrap">© 2026 Сергей · Караганда, Казахстан · Сайт сделан с помощью ИИ</div>
+  <div class="wrap">© 2026 Сергей · Караганда, Казахстан · Python / FastAPI · AI Backend Engineer</div>
 </footer>
 
 <script>
