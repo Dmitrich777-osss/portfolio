@@ -180,7 +180,7 @@ footer{padding:36px 0;text-align:center;color:var(--muted);font-size:.85rem;bord
         <p>Голосовая образовательная платформа с AI-репетитором Светланой (английский и казахский курсы).</p>
       </div>
       <div class="chips">
-        <span class="chip">FastAPI</span><span class="chip">Gemini API</span><span class="chip">Whisper</span><span class="chip">edge-tts</span><span class="chip">SQLite</span><span class="chip">Vosk</span><span class="chip">JavaScript</span><span class="chip">Linux</span><span class="chip">Caddy</span><span class="chip">GitHub Actions</span><span class="chip">Hetzner</span>
+        <span class="chip">FastAPI</span><span class="chip">Gemini API</span><span class="chip">Whisper</span><span class="chip">edge-tts</span><span class="chip">PostgreSQL</span><span class="chip">Docker</span><span class="chip">Vosk</span><span class="chip">JavaScript</span><span class="chip">Linux</span><span class="chip">Caddy</span><span class="chip">GitHub Actions</span><span class="chip">Hetzner</span>
       </div>
       <div class="story">
         <div>
@@ -196,7 +196,7 @@ footer{padding:36px 0;text-align:center;color:var(--muted);font-size:.85rem;bord
           <ul>
             <li>Backend-архитектура с нуля на FastAPI с REST API для голосовых сценариев.</li>
             <li>Vosk (офлайн STT) для казахского языка, Whisper для английского, Gemini для логики диалога, edge-tts для голоса.</li>
-            <li>Хранение профилей и истории прогресса в SQLite с ежечасными бэкапами.</li>
+            <li>Хранение профилей и истории прогресса в PostgreSQL (миграции Alembic, Docker Compose) с ежечасными бэкапами.</li>
             <li>Клиентский PWA-интерфейс с поддержкой добавления на экран смартфонов iOS и Android.</li>
           </ul>
         </div>
@@ -204,7 +204,7 @@ footer{padding:36px 0;text-align:center;color:var(--muted);font-size:.85rem;bord
           <h4>Результат</h4>
           <ul>
             <li>Работающий сервис <strong>impulspeak.com</strong>: интерактивные сценарии (аэропорт, банк, собеседование).</li>
-            <li>Перенос с Google Cloud на Hetzner: серверные расходы сокращены <strong>в 4 раза (с ~$20 до ~€4/мес)</strong> при 100% аптайме.</li>
+            <li>Перенос с Google Cloud на Hetzner: серверные расходы сокращены <strong>в 4 раза (с ~$20 до ~€4/мес)</strong>.</li>
             <li>Сравнение моделей: казахская модель <strong>Vosk распознала 9 из 9 фраз</strong>, в то время как облачный Whisper дал 0 из 9.</li>
             <li>Двойной мониторинг: локальный сторож раз в 5 минут с автовосстановлением и ботом в Telegram + проверка на GitHub Actions.</li>
           </ul>
@@ -355,7 +355,7 @@ footer{padding:36px 0;text-align:center;color:var(--muted);font-size:.85rem;bord
       <div class="step"><h3>Мониторинг</h3><p>Автоматическая проверка сайта каждые 5 минут с самовосстановлением при сбоях и ежедневной сводкой в Telegram. Отдельная независимая проверка на GitHub Actions.</p></div>
       <div class="step"><h3>SEO</h3><p>Посадочные страницы под конкретные поисковые запросы, sitemap, подтверждение в Google Search Console и оптимизация метаданных.</p></div>
       <div class="step"><h3>Расходы</h3><p>Перенос инфраструктуры с Google Cloud на Hetzner: расходы упали примерно в 4 раза (с ~$20 до ~€4 в месяц) без потери производительности.</p></div>
-      <div class="step"><h3>Безопасность</h3><p>Закрыл найденные уязвимости, убрал утечку ключей из логов, настроил защиту от перебора запросов и изолированные зоны доступа.</p></div>
+      <div class="step"><h3>Безопасность</h3><p>Закрыл найденные уязвимости, настроил защиту от перебора запросов и изолированные зоны доступа.</p></div>
     </div>
   </div>
 </section>
