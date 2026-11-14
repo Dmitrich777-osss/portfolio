@@ -95,6 +95,15 @@ h1{font-size:clamp(2.2rem,7vw,4rem);line-height:1.1;letter-spacing:-.02em;margin
 .service-card::before{content:"";position:absolute;top:0;left:0;width:100%;height:3px;background:linear-gradient(90deg,var(--accent),var(--accent2))}
 .service-icon{font-size:1.8rem;margin-bottom:12px}
 .service-img{display:block;width:100%;height:auto;border-radius:12px;margin-top:16px;border:1px solid var(--line)}
+/* просмотр картинок на весь экран */
+.shot,.service-img{cursor:zoom-in}
+.shot:focus-visible,.service-img:focus-visible{outline:2px solid var(--accent2);outline-offset:3px}
+.lightbox{position:fixed;inset:0;z-index:1000;display:none;align-items:center;justify-content:center;background:rgba(5,7,10,.92);padding:16px;cursor:zoom-out}
+.lightbox.open{display:flex}
+.lightbox img{max-width:100%;max-height:100%;object-fit:contain;border-radius:8px;box-shadow:0 10px 40px rgba(0,0,0,.6)}
+.lightbox-close{position:absolute;top:12px;right:12px;width:44px;height:44px;border:0;border-radius:50%;background:rgba(255,255,255,.12);color:#fff;font-size:26px;line-height:1;cursor:pointer}
+.lightbox-close:hover,.lightbox-close:focus-visible{background:rgba(255,255,255,.25)}
+body.lb-open{overflow:hidden}
 .service-card h3{font-size:1.2rem;margin-bottom:10px;color:var(--text)}
 .service-card p{color:#cfd5e2;font-size:.95rem;line-height:1.6}
 .service-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
@@ -421,6 +430,33 @@ footer{padding:36px 0;text-align:center;color:var(--muted);font-size:.85rem;bord
     entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}});
   },{threshold:.12});
   els.forEach(function(e){io.observe(e)});
+})();
+</script>
+<script>
+(function(){
+  var box=document.createElement('div');
+  box.className='lightbox';box.setAttribute('role','dialog');box.setAttribute('aria-modal','true');box.setAttribute('aria-label','Просмотр изображения');
+  var big=document.createElement('img');
+  var btn=document.createElement('button');
+  btn.className='lightbox-close';btn.type='button';btn.setAttribute('aria-label','Закрыть');btn.innerHTML='&times;';
+  box.appendChild(big);box.appendChild(btn);document.body.appendChild(box);
+  var last=null;
+  function open(img){
+    last=img;big.src=img.currentSrc||img.src;big.alt=img.alt||'';
+    box.classList.add('open');document.body.classList.add('lb-open');btn.focus();
+  }
+  function close(){
+    box.classList.remove('open');document.body.classList.remove('lb-open');big.removeAttribute('src');
+    if(last&&last.focus)last.focus();
+  }
+  document.querySelectorAll('.shot,.service-img').forEach(function(img){
+    img.tabIndex=0;img.setAttribute('role','button');
+    img.setAttribute('aria-label','Открыть изображение: '+(img.alt||''));
+    img.addEventListener('click',function(){open(img)});
+    img.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();open(img)}});
+  });
+  box.addEventListener('click',close);
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&box.classList.contains('open'))close()});
 })();
 </script>
 </body>
