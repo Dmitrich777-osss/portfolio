@@ -487,7 +487,7 @@ footer{padding:36px 0;text-align:center;color:var(--muted);font-size:.85rem;bord
   box.addEventListener('touchstart',function(e){tx=e.touches[0].clientX;swiped=false},{passive:true});
   box.addEventListener('touchend',function(e){
     if(tx===null)return;var dx=e.changedTouches[0].clientX-tx;tx=null;
-    if(Math.abs(dx)>50){swiped=true;step(dx<0?1:-1)}
+    if(Math.abs(dx)>50){swiped=true;setTimeout(function(){swiped=false},400);step(dx<0?1:-1)}
   },{passive:true});
   box.addEventListener('click',function(e){if(swiped){e.stopImmediatePropagation();swiped=false}},true);
 })();
