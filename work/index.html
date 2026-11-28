@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Сергей — автоматизация бизнес-процессов и внедрение ИИ</title>
+<meta name="description" content="Снимаю с сотрудников ручную рутину. Примеры «было → стало»: сводка продаж 2 часа → 30 секунд.">
+<meta name="author" content="Сергей">
+<meta name="theme-color" content="#0b0d12">
+<link rel="canonical" href="https://dmitrich777-osss.github.io/portfolio/work/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Сергей — автоматизация бизнес-процессов и внедрение ИИ">
+<meta property="og:description" content="Снимаю с сотрудников ручную рутину. Примеры «было → стало»: сводка продаж 2 часа → 30 секунд.">
+<meta property="og:url" content="https://dmitrich777-osss.github.io/portfolio/work/">
+<meta property="og:image" content="https://dmitrich777-osss.github.io/portfolio/work/og-image-v2.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Сергей — автоматизация бизнес-процессов и внедрение ИИ">
+<meta name="twitter:description" content="Снимаю с сотрудников ручную рутину. Примеры «было → стало»: сводка продаж 2 часа → 30 секунд.">
+<meta name="twitter:image" content="https://dmitrich777-osss.github.io/portfolio/work/og-image-v2.png">
+<style>
+:root{
+  --bg:#0b0d12; --bg2:#12151d; --card:#161a24; --line:#242a38;
+  --text:#e8ebf2; --muted:#9aa3b5; --accent:#7c5cff; --accent2:#22d3ee; --accent3:#f59e0b;
+  --radius:16px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+section{padding:72px 0}
+h2{font-size:clamp(1.5rem,4vw,2rem);margin-bottom:28px;letter-spacing:-.01em}
+h2::before{content:"// ";color:var(--accent);font-family:ui-monospace,Consolas,monospace}
+.grad{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.grad-gold{background:linear-gradient(90deg,var(--accent3),#fde047);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* hero */
+.hero{min-height:92vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:60px 0}
+.hero::before{content:"";position:absolute;width:620px;height:620px;right:-180px;top:-160px;background:radial-gradient(circle,rgba(124,92,255,.28),transparent 65%);pointer-events:none}
+.hero::after{content:"";position:absolute;width:480px;height:480px;left:-160px;bottom:-200px;background:radial-gradient(circle,rgba(34,211,238,.16),transparent 65%);pointer-events:none}
+.hero .wrap{position:relative;z-index:1}
+.tag{display:inline-block;font:500 .85rem ui-monospace,Consolas,monospace;color:var(--accent2);border:1px solid var(--line);background:var(--bg2);padding:6px 12px;border-radius:99px;margin-bottom:22px}
+h1{font-size:clamp(2.2rem,7vw,4rem);line-height:1.1;letter-spacing:-.02em;margin-bottom:14px}
+.role{font-size:clamp(1.1rem,3vw,1.5rem);color:var(--muted);margin-bottom:10px}
+.stack{font:500 clamp(1rem,2.5vw,1.2rem) ui-monospace,Consolas,monospace;margin-bottom:10px}
+.loc{color:var(--muted);margin-bottom:24px}
+.slogan{max-width:660px;font-size:1.1rem;margin-bottom:34px;color:#cfd5e2}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 24px;border-radius:12px;text-decoration:none;font-weight:600;transition:transform .2s,box-shadow .2s,background .2s;border:1px solid transparent}
+.btn:hover{transform:translateY(-2px)}
+.btn-wa{background:#25d366;color:#06210f;box-shadow:0 8px 24px rgba(37,211,102,.25)}
+.btn-wa:hover{box-shadow:0 12px 30px rgba(37,211,102,.38)}
+.btn-ghost{border-color:var(--line);background:var(--bg2)}
+.btn-ghost:hover{border-color:var(--accent)}
+.btn-gold{background:linear-gradient(135deg,#f59e0b,#d97706);color:#0b0f19;border-color:#fbbf24;box-shadow:0 6px 20px rgba(245,158,11,.25)}
+.btn-gold:hover{box-shadow:0 8px 26px rgba(245,158,11,.35)}
+.btn svg{width:20px;height:20px;fill:currentColor}
+
+/* about */
+.about p{color:#cfd5e2;margin-bottom:16px;max-width:780px}
+.about strong{color:var(--text)}
+.quote{margin-top:24px;padding:18px 22px;border-left:3px solid var(--accent);background:var(--bg2);border-radius:0 12px 12px 0;font-weight:600;max-width:780px}
+
+/* project */
+.case{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:36px}
+.case-head{padding:28px 28px 8px}
+.case-head h3{font-size:1.6rem;margin-bottom:6px}
+.case-head p{color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;padding:14px 28px 0}
+.chip{font:500 .8rem ui-monospace,Consolas,monospace;padding:5px 11px;border-radius:99px;background:rgba(124,92,255,.14);color:#c4b5ff;border:1px solid rgba(124,92,255,.3)}
+.chip-cyan{background:rgba(34,211,238,.12);color:#a5f3fc;border-color:rgba(34,211,238,.3)}
+.chip-gold{background:rgba(245,158,11,.14);color:#fde68a;border-color:rgba(245,158,11,.3)}
+.story{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);margin-top:24px;border-top:1px solid var(--line)}
+.story>div{background:var(--card);padding:22px 28px}
+.story h4{font:600 .8rem ui-monospace,Consolas,monospace;text-transform:uppercase;letter-spacing:.08em;color:var(--accent2);margin-bottom:10px}
+.story ul{list-style:none}
+.story li{color:#cfd5e2;font-size:.95rem;margin-bottom:8px;padding-left:16px;position:relative}
+.story li::before{content:"›";position:absolute;left:0;color:var(--accent)}
+.case-foot{padding:22px 28px 28px}
+.shots{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:12px;margin-bottom:18px;-webkit-overflow-scrolling:touch}
+.shots::-webkit-scrollbar{height:8px}
+.shots::-webkit-scrollbar-thumb{background:var(--line);border-radius:99px}
+.shots figure{flex:0 0 auto;width:min(210px,52vw);scroll-snap-align:start}
+.shot{display:block;width:100%;aspect-ratio:9/16;object-fit:cover;border:1px solid var(--line);border-radius:16px;background:var(--bg2)}
+.shots figcaption{color:var(--muted);font-size:.82rem;margin-top:8px;text-align:center}
+
+/* services */
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.services-sub{font-size:1.2rem;margin:40px 0 16px;color:var(--text)}
+.cta-note{margin-top:14px;color:var(--muted);font-size:.9rem}
+.service-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px 24px;transition:border-color .2s,transform .2s;position:relative;overflow:hidden}
+.service-card:hover{border-color:var(--accent2);transform:translateY(-3px)}
+.service-card::before{content:"";position:absolute;top:0;left:0;width:100%;height:3px;background:linear-gradient(90deg,var(--accent),var(--accent2))}
+.service-icon{font-size:1.8rem;margin-bottom:12px}
+.service-img{display:block;width:100%;height:auto;border-radius:12px;margin-top:16px;border:1px solid var(--line)}
+/* просмотр картинок на весь экран */
+.shot,.service-img{cursor:zoom-in}
+.shot:focus-visible,.service-img:focus-visible{outline:2px solid var(--accent2);outline-offset:3px}
+.lightbox{position:fixed;inset:0;z-index:1000;display:none;align-items:center;justify-content:center;background:rgba(5,7,10,.92);padding:16px;cursor:zoom-out}
+.lightbox.open{display:flex}
+.lightbox img{max-width:100%;max-height:100%;object-fit:contain;border-radius:8px;box-shadow:0 10px 40px rgba(0,0,0,.6)}
+.lightbox-close{position:absolute;top:12px;right:12px;width:44px;height:44px;border:0;border-radius:50%;background:rgba(255,255,255,.12);color:#fff;font-size:26px;line-height:1;cursor:pointer}
+.lightbox-close:hover,.lightbox-close:focus-visible{background:rgba(255,255,255,.25)}
+.lightbox-nav{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border:0;border-radius:50%;background:rgba(255,255,255,.12);color:#fff;font-size:26px;line-height:1;cursor:pointer}
+.lightbox-nav:hover,.lightbox-nav:focus-visible{background:rgba(255,255,255,.25)}
+.lightbox-prev{left:12px}
+.lightbox-next{right:12px}
+.lightbox-count{position:absolute;bottom:14px;left:50%;transform:translateX(-50%);padding:4px 12px;border-radius:99px;background:rgba(0,0,0,.55);color:#e8ebf2;font:500 .85rem ui-monospace,Consolas,monospace}
+body.lb-open{overflow:hidden}
+.service-card h3{font-size:1.2rem;margin-bottom:10px;color:var(--text)}
+.service-card p{color:#cfd5e2;font-size:.95rem;line-height:1.6}
+.service-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.service-tag{font:500 .75rem ui-monospace,Consolas,monospace;padding:3px 8px;border-radius:6px;background:var(--bg2);color:var(--muted);border:1px solid var(--line)}
+
+/* method */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px;transition:border-color .2s,transform .2s}
+.step:hover{border-color:var(--accent);transform:translateY(-3px)}
+.step .n{font:700 1.6rem ui-monospace,Consolas,monospace;color:var(--accent);margin-bottom:8px}
+.step h3{font-size:1.05rem;margin-bottom:6px}
+.step p{color:var(--muted);font-size:.93rem}
+.method-note{margin-top:24px;color:#cfd5e2;max-width:760px}
+
+/* skills */
+.skills{display:flex;flex-wrap:wrap;gap:10px}
+.skill{padding:9px 16px;border-radius:99px;background:var(--card);border:1px solid var(--line);font-size:.95rem;transition:border-color .2s,color .2s}
+.skill:hover{border-color:var(--accent2);color:var(--accent2)}
+
+/* contacts */
+.contacts{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.contact{display:block;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px;transition:border-color .2s,transform .2s}
+.contact:hover{border-color:var(--accent);transform:translateY(-3px)}
+.contact small{display:block;color:var(--muted);font:.78rem ui-monospace,Consolas,monospace;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
+.contact span{font-weight:600}
+footer{padding:36px 0;text-align:center;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line)}
+
+/* scroll animation */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+  .btn,.step,.contact,.service-card{transition:none}
+}
+@media (max-width:720px){
+  section{padding:52px 0}
+  .story{grid-template-columns:1fr}
+  .case-head,.chips,.case-foot,.story>div{padding-left:20px;padding-right:20px}
+  .btn{width:100%;justify-content:center}
+}
+</style>
+<style>
+.hero{min-height:0;padding:72px 0 24px}
+section{padding:36px 0}
+.pair{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;margin-bottom:12px;display:grid;grid-template-columns:1fr auto 1fr;gap:16px;align-items:center}
+.pair small{display:block;color:var(--muted);font-size:.8rem;text-transform:uppercase;letter-spacing:.06em}
+.pair .arrow{color:var(--accent2);font-size:1.4rem}
+h3.sub{margin:26px 0 14px;font-size:1.1rem}
+.note{color:var(--muted);font-size:.95rem}
+.box{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px;margin-bottom:14px}
+.box h3{margin-bottom:8px}
+table{border-collapse:collapse;width:100%;margin-top:12px}
+td{border-top:1px solid var(--line);padding:8px 6px;vertical-align:top}
+td:first-child{color:var(--muted);width:40%}
+@media (max-width:720px){.pair{grid-template-columns:1fr;gap:6px}.pair .arrow{transform:rotate(90deg);justify-self:start}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="wrap">
+  <h1><span class="grad">Сергей</span></h1>
+  <p class="role">Специалист по автоматизации бизнес-процессов и внедрению ИИ</p>
+  <p class="loc">Караганда, Казахстан · удалённо или гибрид</p>
+  <p class="slogan">Снимаю с сотрудников ручную рутину. Людей не заменяю: освобождаю их время для клиентов и продаж.</p>
+</div></header>
+<main>
+<section><div class="wrap">
+  <h2>Было → стало</h2>
+  <h3 class="sub">Сделано</h3>
+  <div class="pair"><div><small>Было</small>Сводку продаж из офлайн-точки, Instagram, WhatsApp и звонков готовили 2 часа.</div><div class="arrow">→</div><div><small>Стало</small>Ежедневный отчёт за 30 секунд.</div></div>
+  <div class="pair"><div><small>Было</small>Сервис на Google Cloud стоил около $20 в месяц.</div><div class="arrow">→</div><div><small>Стало</small>После переноса на Hetzner — около €4.</div></div>
+  <h3 class="sub">Может стать у вас</h3>
+  <div class="pair"><div><small>Было</small>Заявки из мессенджеров переписывают вручную.</div><div class="arrow">→</div><div><small>Может стать</small>Приходят разобранными в таблицу, сотрудник проверяет спорное.</div></div>
+  <div class="pair"><div><small>Было</small>Нужное ищут по документам руками.</div><div class="arrow">→</div><div><small>Может стать</small>Находится по запросу.</div></div>
+  <div class="box">
+    <h3>Пример на выдуманных данных</h3>
+    <p>«Здравствуйте, нужно 20 коробок бумаги А4 в пятницу до обеда, офис на Абая, 10. Айгуль»</p>
+    <table>
+      <tr><td>Что нужно</td><td>Бумага А4</td></tr>
+      <tr><td>Количество</td><td>20 коробок</td></tr>
+      <tr><td>Когда</td><td>пятница, до обеда</td></tr>
+      <tr><td>Куда</td><td>офис, Абая, 10</td></tr>
+      <tr><td>Кто</td><td>Айгуль</td></tr>
+      <tr><td>Проверить человеку</td><td>телефон не указан</td></tr>
+    </table>
+  </div>
+</div></section>
+<section id="projects"><div class="wrap">
+  <h2>Проекты</h2>
+  <div class="box">
+    <h3>Сводная аналитика продаж (B2B)</h3>
+    <p>Боты и парсеры собирают заявки из офлайн-точки, Instagram, WhatsApp и звонков в один ежедневный отчёт. Подготовка сводки: с 2 часов до 30 секунд.</p>
+    <p class="note">Python, FastAPI</p>
+  </div>
+  <div class="box">
+    <h3>«Светлана» — мульти-агентная система (личный проект)</h3>
+    <p>Оркестратор и специалисты: проекты, исследования, почта, счета, сводки. Работает на сервере в Docker. Действия выполняются только после подтверждения человеком, цифры проверяет код, а не модель.</p>
+    <p class="note">Gemini, Groq, лимит расходов, мониторинг, резервные копии</p>
+  </div>
+  <div class="box">
+    <h3>«Продажник» — Telegram-бот для приёма заявок (личный проект)</h3>
+    <p>Отвечает по сценарию и проверенным фактам. Заинтересованного человека передаёт мне, деньги не принимает. Работает на сервере в Docker. Сторож каждые 10 минут проверяет сбои и пишет мне, копия базы делается раз в день, есть 38 автоматических тестов.</p>
+    <p class="note">Python, Groq, DeepSeek, SQLite</p>
+  </div>
+</div></section>
+<section><div class="wrap">
+  <h2>Инструменты</h2>
+  <p>Python (FastAPI), LLM (Gemini, Claude, Groq), RAG, REST API и webhook, SQL, PostgreSQL, Docker, Linux, Git.</p>
+</div></section>
+<section id="contacts"><div class="wrap">
+  <h2>Контакты</h2>
+  <div class="contacts">
+    <a class="contact" href="https://wa.me/77025923481"><small>WhatsApp</small><span>+7 702 592-34-81</span></a>
+    <a class="contact" href="mailto:impulspeak@gmail.com"><small>Email</small><span>impulspeak@gmail.com</span></a>
+    <a class="contact" href="https://github.com/Dmitrich777-osss" rel="noopener"><small>GitHub</small><span>Dmitrich777-osss ↗</span></a>
+    <a class="contact" href="https://karaganda.hh.kz/resume/e2b2218eff112a27ee0039ed1f43624d556b39" rel="noopener"><small>Резюме</small><span>hh.kz ↗</span></a>
+  </div>
+</div></section>
+</main>
+<footer><div class="wrap">© 2026 Сергей · Караганда, Казахстан</div></footer>
+</body>
+</html>
